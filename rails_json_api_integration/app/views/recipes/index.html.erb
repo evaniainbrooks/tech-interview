@@ -1,0 +1,15 @@
+<div class="mt-5">
+  <form>
+    <div class="input-group">
+      <input value="<%= @query %>" name="query" type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="submit">Search</button>
+        </span>
+    </div>
+  </form>
+  <table class="table table-striped mt-5">
+    <tbody>
+      <%= render(partial: 'recipe', collection: @recipes) || render(partial: 'empty') %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+%tr
+  %td
+    - unless recipe.thumbnail.blank?
+      %img{width: 100, src: recipe.thumbnail, class: 'img-thumbnail'}/
+
+  %td
+    = link_to recipe.href do 
+      %h3= recipe.title
+      %span.text-default= recipe.ingredients
+      %br/
+      %span.text-muted.small= recipe.href
