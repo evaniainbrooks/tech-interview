@@ -1,0 +1,23 @@
+[
+  {
+    "operation": "CREATE_PLAYLIST_SONG",
+    "entity": {
+      "playlist_id": "1",
+      "song_id": "2"
+    }
+  },
+  {
+    "operation": "CREATE_PLAYLIST",
+    "entity": {
+      "user_id": "1",
+      "song_ids": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  {
+    "operation": "DELETE_PLAYLIST",
+    "entity": "1"
+  }
+]
